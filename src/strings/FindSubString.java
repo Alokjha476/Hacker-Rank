@@ -2,7 +2,7 @@ package strings;
 
 import java.util.Scanner;
 
-public class GetExpectedString {
+public class FindSubString {
     public static void main(String[] args) {
         System.out.println("Enter String : ");
         Scanner sc = new Scanner(System.in);

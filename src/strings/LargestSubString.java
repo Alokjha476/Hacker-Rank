@@ -3,7 +3,7 @@ package strings;
 import java.util.Scanner;
 
 
-public class GetExpectedString1 {
+public class LargestSubString {
     private static String getSmallestAndLargest(String s, int k) {
         String smallest = s.substring(0, k);
         String largest = s.substring(0, k);
