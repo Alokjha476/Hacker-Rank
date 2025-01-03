@@ -14,10 +14,6 @@ public class FindTheElement {
         }else {
             return findElement(array, left, mid-1, targetElement);
         }
-
-
-
-
     }
 
     public static void main(String[] args) {

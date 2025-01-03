@@ -1,6 +1,4 @@
-package Dsa_Problems;
-
-import java.util.Optional;
+package Arrays;
 
 public class LinkedList {
     public static class Node{

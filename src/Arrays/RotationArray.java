@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 /*Left Rotation by One Position
 Right Rotation by One Position

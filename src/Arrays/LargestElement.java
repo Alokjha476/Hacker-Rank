@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 public class LargestElement {
     private static int largestElement(int[] array) {

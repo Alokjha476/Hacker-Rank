@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 // singleton class
 public class DatabaseConnection {

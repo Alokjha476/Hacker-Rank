@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 public class FindPrimeNumber {
     public static void findPrime(int [] array) {

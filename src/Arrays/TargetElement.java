@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 public class TargetElement {
     private static int findTargetElement(int[] array,int target) {

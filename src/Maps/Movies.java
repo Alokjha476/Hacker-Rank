@@ -55,14 +55,14 @@ public class Movies {
 
         List<Map.Entry<Integer, Movies>> moviesList1 = new ArrayList<>(moviesMap.entrySet());
         moviesList1.sort(Comparator.comparing(entry -> entry.getValue().getName()));
-        //moviesList1.forEach(System.out::println);
+        moviesList1.forEach(System.out::println);
 
         List<Map.Entry<Integer, Movies>> sortedEntries = new ArrayList<>(moviesMap.entrySet());
         sortedEntries.sort(Comparator
                 .comparing((Map.Entry<Integer, Movies> entry) -> entry.getValue().getName().compareToIgnoreCase(entry.getValue().getName())) // sort by name
                 .thenComparing((Map.Entry<Integer, Movies> entry1)
                         -> entry1.getValue().getYear())); // then sort by year
-        sortedEntries.forEach(System.out::println);
+       // sortedEntries.forEach(System.out::println);
 
 
        /* !

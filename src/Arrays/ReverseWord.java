@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 public class ReverseWord {
     public static String wordReverse(String str){

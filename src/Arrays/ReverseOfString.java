@@ -1,4 +1,4 @@
-package Dsa_Problems;
+package Arrays;
 
 public class ReverseOfString {
     public static String reverse(String str) {
