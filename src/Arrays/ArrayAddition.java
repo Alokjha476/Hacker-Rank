@@ -1,5 +1,6 @@
 package Arrays;
 // 2 sum problem by
+// return index which element addition will be == target
 public class ArrayAddition {
     public static void add(int[] array, int target) {
         int sum = 0;
