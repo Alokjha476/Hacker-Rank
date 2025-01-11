@@ -1,4 +1,4 @@
-package strings.competition;
+package String.competition;
 
 public class NumberPalindrome {
     public static void main(String[] args) {

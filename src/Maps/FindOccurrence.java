@@ -19,5 +19,6 @@ public class FindOccurrence {
     public static void main(String[] args) {
         String str = "aallloookkkjhaa";
         System.out.print(findCharacterOccurrence(str));
+
     }
 }

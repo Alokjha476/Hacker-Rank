@@ -1,4 +1,4 @@
-package Arrays;
+package String;
 
 public class ReverseOfString {
     public static String reverse(String str) {

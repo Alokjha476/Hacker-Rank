@@ -1,4 +1,4 @@
-package strings;
+package String;
 
 /* reverse string 4 types
  toChatArray();

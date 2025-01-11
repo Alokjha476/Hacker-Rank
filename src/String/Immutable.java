@@ -1,4 +1,4 @@
-package strings;
+package String;
 
 public class Immutable {
     public static void main(String[] args) {

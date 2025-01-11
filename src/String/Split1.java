@@ -1,4 +1,4 @@
-package strings;
+package String;
 
 public class Split1 {
     // find the length

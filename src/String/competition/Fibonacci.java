@@ -1,4 +1,4 @@
-package strings.competition;
+package String.competition;
 
 public class Fibonacci {
     public static int fibonacci(int num) {
