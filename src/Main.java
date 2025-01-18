@@ -1,19 +1,26 @@
-import java.io.FilterOutputStream;
-import java.util.*;
-
 public class Main {
-    public static void main(String[] args) {
-        int [] array = {1,2,3,4,5,6};
-        int breakPoint = 2;
-        // 65123
-        int [] array1 = new int[array.length];
-        array1[0] = array[array.length-1];
-        for (int i = 0; i <array.length-1 ; i++) {
-            array1[i+1] = array[i];
+    public static int maxHighest(int[] array) {
+        int firstHighest = Integer.MIN_VALUE;
+        int secondHighest = Integer.MIN_VALUE;
+        int thirdHighest = Integer.MIN_VALUE;
+
+
+        for (int j : array) {
+            if (firstHighest < j) {
+                firstHighest = j;
+            } else if (secondHighest < j && j < firstHighest) {
+                secondHighest = j;
+            } else if (thirdHighest < j && j < secondHighest) {
+                thirdHighest = j;
+            }
 
         }
-        System.out.println(Arrays.toString(array1));
+        return thirdHighest;
+    }
 
+    public static void main(String[] args) {
+        int[] array = {1, 4, 6, 2, 8, 1}; // print 4
+        System.out.println(maxHighest(array));
 
     }
 }

@@ -1,29 +1,37 @@
 package Maps;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
-// 2 sum problem -> return index
+import java.util.*;
+
 public class TwoSum {
-    public static int[] findSum(int[] array, int target) {
-        // create the Map
-        Map<Integer, Integer> map = new HashMap<>();
-        // step Put the array in Map
-        // target - arr[i] = 3-5= -2 then it will be check in full map rest himself index.
-        // check if the value is present or not before
+    public static List<int[]> findAllSums(int[] array, int target) {
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        List<int[]> result = new ArrayList<>();
+
+        // Populate the map and find pairs
         for (int i = 0; i < array.length; i++) {
-            int findMeInMap = target - array[i];
-            if (map.containsKey(findMeInMap)) {
-                return new int[]{map.get(findMeInMap), i};
+            int complement = target - array[i];
+
+            // Check if the complement exists in the map
+            if (map.containsKey(complement)) {
+                for (int index : map.get(complement)) {
+                    result.add(new int[]{index, i});
+                }
             }
-            map.put(array[i], i);
+
+            // Add current element's index to the map
+            map.putIfAbsent(array[i], new ArrayList<>());
+            map.get(array[i]).add(i);
         }
-        // return map which have the 2 sum  indexes.
-        return null;
+        return result;
     }
+
     public static void main(String[] args) {
-        int[] array = {5, 3, 2, 7, 5, -2, 7,4};
-        int target = 3;
-        System.out.println(Arrays.toString(findSum(array, target)));
+        int[] array = {5, 3, 2, 7, 5, -2, 7, 4};
+        int target = 9;
+
+        List<int[]> pairs = findAllSums(array, target);
+        for (int[] pair : pairs) {
+            System.out.println(Arrays.toString(pair));
+        }
     }
 }

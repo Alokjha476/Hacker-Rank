@@ -14,7 +14,7 @@ public class FlatMap {
         //When you have a collection of collections (e.g., a List<List<T>>)
         // and need to flatten it into a single collection for processing.
         List<List<String>> lists = List.of(List.of("Kamal", "Piyush", "Alok"), List.of("One", "Two"));
-       List<String> list1 =  lists.stream().flatMap(List::stream).collect(Collectors.toList());
+       List<String> list1 =  lists.stream().flatMap(List::stream).toList();
        list1.forEach(System.out::println);
     }
 }

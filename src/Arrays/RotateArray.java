@@ -9,15 +9,13 @@ public class RotateArray {
          n = n % length;
          // reverse the array
          reverse(arr, 0, length-1 );
-
          reverse(arr, 0, n-1);
-
          reverse(arr, n, length-1);
 
     }
     public static void reverse(int [] array, int start , int end) {
 
-        while (start < end){
+        while (start <= end){
             int temp = array[start];
             array[start] = array[end];
             array[end] = temp;
