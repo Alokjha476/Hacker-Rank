@@ -5,8 +5,8 @@ import java.util.Optional;
 /*6. Write a method to check if an Optional<String>
 contains a string that starts with "A". Return true if it does,
 or false otherwise.*/
-public class IsPresent {
-    public static boolean isPresent(Optional<String> str) {
+public class  IsPresent {
+    public static  boolean isPresent(Optional<String> str) {
 
     return str.filter(v->v.startsWith("A")).isPresent();
     }

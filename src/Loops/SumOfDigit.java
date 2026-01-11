@@ -5,7 +5,7 @@ public class SumOfDigit {
         int sumOfDigit = 0;
         int sumOfNumbers= 0;
         for (int j : array) {
-            sumOfNumbers = sumOfNumbers + j;
+            sumOfNumbers = sumOfNumbers + j; // print sum of number
 
             int current = j;
             while (current > 0) {
@@ -14,7 +14,7 @@ public class SumOfDigit {
                 current = current / 10;
             }
         }
-        return sumOfNumbers-sumOfDigit;
+        return sumOfDigit;
     }
     public static void main(String[] args) {
         int [] array = {1,12};

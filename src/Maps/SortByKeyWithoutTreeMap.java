@@ -1,9 +1,6 @@
 package Maps;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SortByKeyWithoutTreeMap {
     public static void main(String[] args) {
@@ -14,28 +11,23 @@ public class SortByKeyWithoutTreeMap {
         map.put(2, "Papaya");
         map.put(1, "Pomegranate");
 
-        System.out.println(map.containsKey(3));
+        Map<Integer, String> map2 = new TreeMap<>(map);
+        System.out.println(map2);// map sorted by key using TreeMap
+        System.out.println(map.containsKey(3));// return true and false
         // comparing by key
         List<Map.Entry<Integer, String>> entries = new ArrayList<>(map.entrySet());
         entries.sort(Map.Entry.comparingByKey());
         for (Map.Entry<Integer, String> entry : entries) {
-            System.out.println(entry);
+            System.out.println(entry); // map sorted by key without using TreeMap
         }
         // comparing by Value
         List<Map.Entry<Integer, String>> entries1 = new ArrayList<>(map.entrySet());
         entries1.sort(Map.Entry.comparingByValue());
         // given output without list
-        System.out.println(entries1);
+        System.out.println(entries1); //map sorted by value without using TreeMap
         for (Map.Entry<Integer, String> entry : entries1) {
             // given output as list
             System.out.print(entry + " ");
         }
-
-
-       /* for (Map.Entry<Integer, String> entry : map.entrySet()){
-
-
-        }*/
-
     }
 }

@@ -7,9 +7,9 @@ import java.util.Map;
 public class MaxSum {
     public static int findMaxSum(Map<String, int[]> map) {
         int maxSum = 0;
+        int currentMaxSum = 0;
         for (Map.Entry<String, int[]> entry : map.entrySet()) {
             int[] number = entry.getValue();
-            int currentMaxSum = 0;
             for (int num : number) {
                 currentMaxSum = currentMaxSum + num;
                 if (maxSum < currentMaxSum) {
